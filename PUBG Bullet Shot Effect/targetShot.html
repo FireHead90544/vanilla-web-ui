@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="targetShot.css">
+    <title>Shoot The Poster</title>
+</head>
+<body>
+    <section>
+        <audio id="audio" src="sound.wav" autostart="false"></audio>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("click", function(e){
+            var body = document.querySelector('body');
+            var bullet = document.createElement('span');
+            var x = e.offsetX;
+            var y = e.offsetY;
+            bullet.style.left = x+'px';
+            bullet.style.top = y+'px';
+            body.appendChild(bullet);
+
+            var audio = document.getElementById('audio');
+            audio.play();
+        })   
+    </script>
+</body>
+</html>
