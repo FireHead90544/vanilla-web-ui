@@ -97,3 +97,7 @@ div.body p{
     text-align: center;
     padding: 15px 0;
 }
+
+.active-link{
+    color: #8400ff;
+}
