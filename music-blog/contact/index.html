@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
@@ -22,6 +23,43 @@
             <p>Fill the form below to contact us</p>
         </div>
         <hr>
+        <div class="content">
+            <form>
+                <div>
+                    <label for="fullname">Name: </label>
+                    <input type="text" placeholder="Naruto Kakashi" name="fullname" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" placeholder="abc@gmail.com" name="email" required>
+                </div>
+                <div>
+                    <label for="rating">Rating: </label>
+                    <label>1 <input type="radio" name="rating" value="1"></label>
+                    <label>2 <input type="radio" name="rating" value="2"></label>
+                    <label>3 <input type="radio" name="rating" value="3"></label>
+                    <label>4 <input type="radio" name="rating" value="4"></label>
+                    <label>5 <input type="radio" name="rating" value="5"></label>
+                </div>
+                <div>
+                    <label for="mobile">Mobile: </label>
+                    <input type="tel" pattern="[0-9]" placeholder="1234567890" name="mobile">
+                </div>
+                <div>
+                    <label for="subject">Subject: </label>
+                    <input type="text" placeholder="Enter your subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea placeholder="Write your message regarding the blog" rows=8 name="message" required></textarea>
+                </div>
+                
+                <div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>     
+        </div>
     </div>
 </body>
 </html>
