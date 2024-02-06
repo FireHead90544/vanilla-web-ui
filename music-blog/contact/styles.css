@@ -1,0 +1,38 @@
+div.content form{
+    border: 2px solid #f4f4f4;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f4f4f4;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+div.content{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0px;
+}
+form div div.ratinginputs, form div div.ratinginputs label{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form div div.ratinginputs{
+    width: 75%;
+}
+
+form div div.ratinginputs label{
+    width: 15%;
+}
+
+form div.messagebox {
+    flex-direction: column;
+    margin-top: 5px;
+}
