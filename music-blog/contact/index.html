@@ -35,11 +35,13 @@
                 </div>
                 <div>
                     <label for="rating">Rating: </label>
-                    <label>1 <input type="radio" name="rating" value="1"></label>
-                    <label>2 <input type="radio" name="rating" value="2"></label>
-                    <label>3 <input type="radio" name="rating" value="3"></label>
-                    <label>4 <input type="radio" name="rating" value="4"></label>
-                    <label>5 <input type="radio" name="rating" value="5"></label>
+                    <div class="ratinginputs">
+                        <label>1 <input type="radio" name="rating" value="1"></label>
+                        <label>2 <input type="radio" name="rating" value="2"></label>
+                        <label>3 <input type="radio" name="rating" value="3"></label>
+                        <label>4 <input type="radio" name="rating" value="4"></label>
+                        <label>5 <input type="radio" name="rating" value="5"></label>
+                    </div>
                 </div>
                 <div>
                     <label for="mobile">Mobile: </label>
@@ -49,7 +51,7 @@
                     <label for="subject">Subject: </label>
                     <input type="text" placeholder="Enter your subject" name="subject" required>
                 </div>
-                <div>
+                <div class="messagebox">
                     <label for="message">Message: </label>
                     <textarea placeholder="Write your message regarding the blog" rows=8 name="message" required></textarea>
                 </div>
