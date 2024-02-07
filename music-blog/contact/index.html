@@ -27,11 +27,11 @@
             <form>
                 <div>
                     <label for="fullname">Name: </label>
-                    <input type="text" placeholder="Naruto Kakashi" name="fullname" required>
+                    <input type="text" name="fullname" required>
                 </div>
                 <div>
                     <label for="email">Email: </label>
-                    <input type="email" placeholder="abc@gmail.com" name="email" required>
+                    <input type="email" name="email" required>
                 </div>
                 <div>
                     <label for="rating">Rating: </label>
@@ -45,18 +45,18 @@
                 </div>
                 <div>
                     <label for="mobile">Mobile: </label>
-                    <input type="tel" pattern="[0-9]" placeholder="1234567890" name="mobile">
+                    <input type="tel" pattern="^[+]?[0-9]{9,12}$" name="mobile" required>
                 </div>
                 <div>
                     <label for="subject">Subject: </label>
-                    <input type="text" placeholder="Enter your subject" name="subject" required>
+                    <input type="text" name="subject" required>
                 </div>
                 <div class="messagebox">
                     <label for="message">Message: </label>
-                    <textarea placeholder="Write your message regarding the blog" rows=8 name="message" required></textarea>
+                    <textarea rows=8 name="message" required></textarea>
                 </div>
                 
-                <div>
+                <div class="buttons">
                     <button type="reset">Reset</button>
                     <button type="submit">Submit</button>
                 </div>
