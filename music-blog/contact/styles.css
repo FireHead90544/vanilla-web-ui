@@ -19,6 +19,7 @@ form div{
     justify-content: space-between;
     margin: 2px 0px;
 }
+
 form div div.ratinginputs, form div div.ratinginputs label{
     display: flex;
     justify-content: space-between;
@@ -32,7 +33,63 @@ form div div.ratinginputs label{
     width: 15%;
 }
 
-form div.messagebox {
+form div.messagebox{
     flex-direction: column;
-    margin-top: 5px;
+}
+
+form div.messagebox textarea{
+    margin-top: 10px;
+}
+
+form div input, form div textarea{
+    background: inherit;
+    border: 2px solid #f4f4f4;
+    padding: 6px;
+    margin: 2px 0;
+    color: #f4f4f4;
+}
+
+form div input:focus, form div textarea:focus{
+    outline: none;
+}
+
+form div label{
+    margin: auto 0;
+}
+
+form div.buttons{
+    margin-top: 8px;
+}
+
+form div.buttons button{
+    padding: 10px 20%;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 1000;
+}
+
+form div.buttons button:focus{
+    outline: none;
+}
+
+form div.buttons button:nth-child(1){
+    background: #f4f4f4;
+    border: 3px solid #8400ff;
+    color: #8400ff;
+}
+
+form div.buttons button:nth-child(1):hover{
+    background: #8400ff;
+    color: #f4f4f4;
+}
+
+form div.buttons button:nth-child(2){
+    background: #8400ff;
+    border: 3px solid #f4f4f4;
+    color: #f4f4f4;
+}
+
+form div.buttons button:nth-child(2):hover{
+    background: #f4f4f4;
+    color: #8400ff;
 }
