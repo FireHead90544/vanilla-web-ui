@@ -1,8 +1,49 @@
 div.aboutbody{
+    display: flex;
     border: 2px solid #f4f4f4;
     width: 50%;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 20px;
     color: #f4f4f4;
     font-family: monospace;
+}
+
+div.left, div.right{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    justify-content: center;
+}
+
+div.right p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+div.right p:nth-child(1){
+    text-align: center;
+    font-size: 20px;
+}
+
+div.right p span{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+div.left img{
+    border: 2px solid #f4f4f4;
+    border-radius: 50%;
+    width: 100%;
+}
+
+div.left div.info{
+    margin-top: 5px;
+    text-align: center;
+}
+
+div.left div.info p{
+    margin: 0;
+    margin-top: 1px;
+    font-weight: normal;
+    font-size: 16px;
 }
