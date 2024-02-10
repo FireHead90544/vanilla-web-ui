@@ -1,0 +1,8 @@
+div.aboutbody{
+    border: 2px solid #f4f4f4;
+    width: 50%;
+    margin: 5px auto;
+    padding: 20px;
+    color: #f4f4f4;
+    font-family: monospace;
+}
