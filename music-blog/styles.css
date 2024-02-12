@@ -101,3 +101,55 @@ div.body p{
 .active-link{
     color: #8400ff;
 }
+
+div.content div.body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+div.content div.body img{
+    width: 25%;
+}
+
+div.content div.body div.info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+div.content div.body div.info div.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+div.content div.body div.info div.buttons button{
+    padding: 10px 15%;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 1000;
+    border-radius: 2px;
+    margin: 0 8px;
+}
+
+div.content div.body div.info div.buttons button:focus{
+    outline: none;
+}
+
+div.content div.body div.info div.buttons button:nth-child(1){
+    background: #f4f4f4;
+    border: 3px solid #f4f4f4;
+    color: #8400ff;
+}
+
+div.content div.body div.info div.buttons button:nth-child(2){
+    background: #8400ff;
+    border: 3px solid #8400ff;
+    color: #f4f4f4;
+}
+
+div.content div.body div.info div.buttons button:hover{
+    scale: 1.05;
+    transition-duration: 500ms;
+}
